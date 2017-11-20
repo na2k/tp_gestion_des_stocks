@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="https://use.fontawesome.com/de98a62e4e.js"></script>
+  <title>TP 2</title>
+</head>
+<body>
+  <section id="formulaire">
+    <div class="nom">
+    <label for="formulaireNom">Nom</label>
+    <input type="text" class="saisieFormulaire" id="formulaireNom" placeholder="Nom *">
+    </div>
+
+    <div class="Prix">
+    <label  for="formulairePrix">Prix</label>
+    <input type="number" class="saisieFormulaire" id="formulairePrix" placeholder="Prix *">
+  </div>
+
+    <div class="Description" >
+    <label for="formulaireDescription">Description</label>
+    <input type="text" class="saisieFormulaire" id="formulaireDescription" placeholder="Description *">
+    </div>
+
+    <div class="Couleur">
+    <label  for="formulaireCouleur">Couleur</label>
+    <input type="text" class="saisieFormulaire" id="formulaireCouleur" placeholder="Couleur">
+</div>
+
+    <div class="Poids">
+    <label  for="formulairePoids">Poids</label>
+    <input type="number" class="saisieFormulaire" id="formulairePoids" placeholder="Poids">
+</div>
+
+    <div class="Image">
+    <label  for="formulaireImage">Image</label>
+    <input type="file" name="parcouririmage" id="formulaireImage">
+</div>
+<button type="button" id="validerFormulaire">Ajouter</button>
+<button type="button" id="annulerFormulaire" onclick="effacer()">Annuler</button>
+    </section>
+  <section id="panier">
+    <table id="listeProduits">
+      <tr><th>Référence</th><th>Nom</th><th>Prix</th><th>Description</th><th>Couleur</th><th>Poids</th></tr>
+    </table>
+    <div id="modif"></div>
+  </section>
+</body>
+</html>
